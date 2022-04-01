@@ -57,10 +57,11 @@ void loop() {
   }
   
   if(cnt == 0) {
-    lcd.print("No empty spots");
     lcd.clear();
+    lcd.print("No empty spots");
     analogWrite(ledRosu,255);
     analogWrite(ledVerde,0);
+    delay(1000);
   }else{
   	analogWrite(ledRosu,0);
     analogWrite(ledVerde,255);
